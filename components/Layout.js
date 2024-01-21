@@ -13,6 +13,7 @@ const sora = Sora({
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
+import Home from '../pages';
 
 
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <TopLeftImg/>
       <Nav />
       <Header />
+      <Home />
       {children}
       </div>
     
