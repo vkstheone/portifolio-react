@@ -35,13 +35,12 @@ const Home = () => {
           > 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. L
             orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make 
-          a type specimen book. It has survived not only five centuries, but also 
-          the leap into
+            
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn/>
           </div>
+          
           <motion.div 
             variants={fadeIn('down', 0.4)} 
             initial="hidden"
@@ -50,7 +49,7 @@ const Home = () => {
             >
              <ProjectsBtn/>
           </motion.div>
-      </div>
+      </div> 
     </div>
     {/* image */}
 
@@ -63,6 +62,7 @@ const Home = () => {
           
           ></div>
           <ParticlesContainer />
+         
           {/** Avatar */}
           <motion.div 
             variants={fadeIn('up', 0.5)} 
