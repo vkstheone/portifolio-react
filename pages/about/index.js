@@ -6,6 +6,7 @@ import {
   FaJs,
   FaReact,
   FaNode,
+  FaSass,
 
 } from "react-icons/fa";
 import Image from "next/image";
@@ -42,8 +43,8 @@ const About = () => {
                     <p className="xl:text-sm xl:mx-0 xl:mt-0 mx-7 mt-[-20px]">JavaScript</p>
                   </div>
                   <div className="xl:flex xl:items-center xl:gap-x-3">
-                    <FaNode/>
-                    <p className="xl:text-sm xl:mx-0 xl:mt-0 mx-7 mt-[-20px]">Node Js</p>
+                    <FaSass/>
+                    <p className="xl:text-sm xl:mx-0 xl:mt-0 mx-7 mt-[-20px]">Sass</p>
                   </div>
                   <div className="xl:flex xl:items-center xl:gap-x-3">
                     <FaReact/>
