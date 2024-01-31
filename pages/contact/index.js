@@ -7,11 +7,6 @@ import {fadeIn} from '../../variants'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-//import axios from '/Utils/axios'
-//import { data } from 'autoprefixer'
-//import { useDispatch } from 'react-redux'
-//import { asyncsignupstudent } from '../../store/Actions/studentaction'
-
  
 const Contact = () => {
   
@@ -53,13 +48,17 @@ const Contact = () => {
   return (<div className='h-full bg-primary/30 '>
     <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
       <div className='flex flex-col w-full max-w-[700px]'>
-        <motion.h2 variants={fadeIn('up',0.2)} initial="hidden" animate="show" exit="hidden" className='h2 text-center mb-12 '> Entre em  <span className='text-accent '>Contato.</span></motion.h2>
+        <motion.h2 variants={fadeIn('up',0.2)} 
+        initial="hidden"
+         animate="show"
+          exit="hidden" 
+          className='h2 text-center mb-12 '
+          >  Entre em  <span className='text-accent '>Contato.</span></motion.h2>
 
 
 
               <form 
               onSubmit={sendEmail}
-              action="/signup" 
               variants={fadeIn('up',0.4)} 
               initial="hidden" 
               animate="show" exit="hidden" 
@@ -113,9 +112,7 @@ const Contact = () => {
                 />
                 
                 <BsArrowRight className='mt-[-58px] ml-[130px]'/>
-              
-              
-              
+                <Circles />
               </form >
             
 

@@ -4,20 +4,24 @@ const workSlides = {
     {
       images: [
         {
-          title: 'Animation',
-          path: '/thumb1.jpg',
+          title: 'HBO-Clone',
+          path: '/hbo.png',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'Canvas',
           path: '/thumb2.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'ReactJs',
           path: '/thumb3.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'NextJs',
           path: '/thumb4.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
       ],
     },
@@ -26,18 +30,22 @@ const workSlides = {
         {
           title: 'Static Landing Pages',
           path: '/thumb4.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'MERN stack project',
           path: '/thumb1.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'Awwarded',
           path: '/thumb2.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'Payment Gateway',
           path: '/thumb3.jpg',
+          link: 'https://vkstheone.github.io/hbo-clone/',
         },
       ],
     },
@@ -72,12 +80,12 @@ const WorkSlider = () => {
       workSlides.slides.map((slide,index)=>{
         return( 
         <SwiperSlide key={index}>
-          <Link href='https://github.com/vkstheone'><div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+          <Link href={''}><div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
             {slide.images.map((image,index)=>{
               return(
                 <div className='relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index}>
                 <div className='w-[250px] xl:w-[350px] flex items-center justify-center relative overflow-hidden group xl:h-[200px] h-[130px]'>
-                  <Image src={image.path} width={500} height={300} alt=''/>
+                  <Image src={image.path} width={500} height={300} alt={image.link}/>
                   <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                   <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                     <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2rem] '>
