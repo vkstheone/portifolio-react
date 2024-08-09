@@ -17,17 +17,17 @@ const About = () => {
   return(
     <div>
       <div className='p-20 flex flex-col items-center justify-center whitespace-nowrap mt-7 xl:mt-0 text-xs xl:text-lg xl-mx-20  '>
-            <h1 className="mx-[100px] text-sm xl:text-2xl mt-8 xl:mt-0 xl:mx-[50px]">About</h1>
+            <h1 className="mx-[100px] text-sm xl:text-2xl mt-8 xl:mt-0 xl:mx-[50px]">Sobre mim</h1>
             <p>I&apos;m a creative MERN Stack Developer</p>
       </div>
       <div>
         <div className="absolute top-[180px] xl:top-[220px] xl:my-[-50px] xl:px-[180px] ">
-              <h6>About me</h6>
-              <p className="xl:w-[350px] xl:text-xs text-[10px]">I am a MERN stack developer with a passion for crafting innovative and user-centric web applications. 
-              With a deep understanding of both the front-end and back-end aspects of web development, I bring to life dynamic and responsive websites that not only look 
-              great but also function seamlessly. I thrive on problem-solving and enjoy the challenge of optimizing performance and user experience. I constantly seek opportunities 
-              to expand my skill set and stay updated with the latest trends in the ever-evolving world of web development. My goal is to create digital solutions that leave a lasting 
-              impact and deliver exceptional value to users.</p>
+              <h6>Sobre mim</h6>
+              <p className="xl:w-[350px] xl:text-xs text-[10px]">
+              Sou um desenvolvedor recém-formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por resolver problemas de forma criativa. Durante minha graduação, adquiri uma sólida base em desenvolvimento de software, com experiência em linguagens como Java, JavaScript e Python, além de conhecimento em frameworks como React e Spring Boot.
+              Tenho uma forte curiosidade por aprender novas tecnologias e metodologias ágeis, sempre buscando me atualizar e aprimorar minhas habilidades. Trabalhei em diversos projetos acadêmicos que me permitiram aplicar na prática os conhecimentos adquiridos, e estou pronto para enfrentar desafios reais no mercado de trabalho.
+              Busco minha primeira oportunidade como desenvolvedor, onde eu possa contribuir com minha dedicação, proatividade e vontade de aprender. Estou entusiasmado para colaborar em uma equipe dinâmica e continuar evoluindo profissionalmente, sempre focado em entregar soluções eficientes e inovadoras.
+              </p>
               <h6 className=" xl:mt-8 mt-8">Skills</h6>
               <div className=" xl:text-2xl xl:flex xl:flex-col xl:gap-x-6 xl:gap-y-4 xl:mt-2">
                   <div className="flex items-center gap-x-3">
@@ -62,14 +62,14 @@ const About = () => {
         </div>
 
         <div className="absolute xl:top-[174px] mt-5 top-[365px] right-0 xl:right-[170px]">
-          <h4>Details</h4>
+          <h4>Detalhes</h4>
           <div className="p-y-4 flex  gap-1 mt-4">
-            <p className="text-white text-xs xl:text-lg">Name :</p>
-            <p className="text-xs xl:text-lg ">Ashutosh Tiwari</p>
+            <p className="text-white text-xs xl:text-lg">Nome:</p>
+            <p className="text-xs xl:text-lg ">Vinicius Souza</p>
           </div>
           <div className="p-y-4 flex  gap-5 mt-3">
             <p className="text-white text-xs xl:text-lg">Idade:</p>
-            <p className="text-xs xl:text-lg">22 Anos</p>
+            <p className="text-xs xl:text-lg">23 Anos</p>
           </div>
           <div className="p-y-4 flex  gap-1 mt-3">
             <p className="text-white text-xs xl:text-lg">Endereço:</p>
