@@ -1,3 +1,4 @@
+import me from "./me.jpg"
 import react,{useState} from "react";
  // icons
 import {
@@ -20,15 +21,21 @@ const About = () => {
             <h1 className="mx-[100px] text-sm xl:text-2xl mt-8 xl:mt-0 xl:mx-[50px]">Sobre mim</h1>
             <p>I&apos;m a creative MERN Stack Developer</p>
       </div>
+      
       <div>
-        <div className="absolute top-[180px] xl:top-[220px] xl:my-[-50px] xl:px-[180px] ">
+        <div className="absolute top-[180px] xl:top-[180px] xl:my-[-50px] xl:px-[180px] ">
               <h6>Sobre mim</h6>
               <p className="xl:w-[350px] xl:text-xs text-[10px]">
-              Sou um desenvolvedor recém-formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por resolver problemas de forma criativa. Durante minha graduação, adquiri uma sólida base em desenvolvimento de software, com experiência em linguagens como Java, JavaScript e Python, além de conhecimento em frameworks como React e Spring Boot.
-              Tenho uma forte curiosidade por aprender novas tecnologias e metodologias ágeis, sempre buscando me atualizar e aprimorar minhas habilidades. Trabalhei em diversos projetos acadêmicos que me permitiram aplicar na prática os conhecimentos adquiridos, e estou pronto para enfrentar desafios reais no mercado de trabalho.
-              Busco minha primeira oportunidade como desenvolvedor, onde eu possa contribuir com minha dedicação, proatividade e vontade de aprender. Estou entusiasmado para colaborar em uma equipe dinâmica e continuar evoluindo profissionalmente, sempre focado em entregar soluções eficientes e inovadoras.
+              Sou um desenvolvedor recém-formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por resolver 
+              problemas de forma criativa. Durante minha graduação, adquiri uma sólida base em desenvolvimento de software,
+              Tenho uma forte curiosidade por aprender novas tecnologias e metodologias ágeis, sempre buscando me atualizar 
+              e aprimorar minhas habilidades. Trabalhei em diversos projetos acadêmicos que me permitiram aplicar na prática
+               os conhecimentos adquiridos, e estou pronto para enfrentar desafios reais no mercado de trabalho.
+              Busco minha primeira oportunidade como desenvolvedor, onde eu possa contribuir com minha dedicação, proatividade 
+              e vontade de aprender. Estou entusiasmado para colaborar em uma equipe dinâmica e continuar evoluindo 
+              profissionalmente, sempre focado em entregar soluções eficientes e inovadoras.
               </p>
-              <h6 className=" xl:mt-8 mt-8">Skills</h6>
+              <h6 className=" xl:mt-5 mt-8">Skills</h6>
               <div className=" xl:text-2xl xl:flex xl:flex-col xl:gap-x-6 xl:gap-y-4 xl:mt-2">
                   <div className="flex items-center gap-x-3">
                     <FaHtml5/>
@@ -57,9 +64,12 @@ const About = () => {
 
       </div>
       <div>
+        
         <div style={{borderRadius:"50%"}} className="hidden xl:block border-solid border-2 border-white xl:absolute xl:top-[200px] xl:left-[670px] xl:w-[250px] xl:h-[250px] ">
-        <Image style={{height:"100%", width:"100%", objectFit:'contain',borderRadius:"50%"}} src={'/Avatar2.png'} width={300} height={200} alt=""/>
+        <Image style={{height:"100%", width:"100%", objectFit:'contain',borderRadius:"50%"}} src={me} width={300} height={200} alt=""/>
         </div>
+
+        
 
         <div className="absolute xl:top-[174px] mt-5 top-[365px] right-0 xl:right-[170px]">
           <h4>Detalhes</h4>
@@ -86,7 +96,7 @@ const About = () => {
             Certifications
           </h6>
           <p className="">
-            Certified as a Full stack web Developer <br />From <br />Sheriyans Coding School ,Bhopal
+            Formação em Analise e Desenvolvimento de Sistemas
           </p>
         </div>
 
