@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import Socials from '../components/Socials';
 import { HiArrowDown, HiArrowRight, HoArrowRight } from 'react-icons/hi2'
+import DownloadPDF from './DownloadPDF';
 
 
 const Header = () => {
@@ -13,15 +14,15 @@ const Header = () => {
             <div className='flex flex-col lg:flex-row
             justify-between items-center gap-y-6 py-8'>
               
-              <Link href={'../public/Vinicius Souza (1).pdf'}>            
-                <div className='flex mt-10 justify-between items-center'>
+              <a href="./cv.pdf">            
+                <div className='flex mt-5 justify-between items-center'>
                 <HiArrowDown className="absolute text-4xl "/>
              
-                <h1 className='p-10 text-sm xl:text-2xl mt-8 xl:mt-0 '>Baixar Corriculo</h1>
+                <h1 className='p-10 text-sm xl:text-2xl xl:mt-0 '>Baixar Corriculo</h1>
                 </div>
              
               
-              </Link>
+              </a>
               <Socials />
             </div>
           </div>
