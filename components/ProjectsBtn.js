@@ -14,7 +14,7 @@ const ProjectsBtn = () => {
       >
         
         <Image src={'/rounded-text.png'} 
-        width={141} 
+        width={121} 
         height={148}
         alt=""
         className="animate-spin-slow  w-full h-full max-w-[141px] max-h-[148px]"
