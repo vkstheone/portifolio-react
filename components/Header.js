@@ -14,7 +14,7 @@ const Header = () => {
             <div className='flex flex-col lg:flex-row
             justify-between items-center gap-y-6 py-8'>
               
-              <a href="/cv.pdf">            
+              <Link href="/cv.pdf">            
                 <div className='flex mt-5 justify-between items-center'>
                 <HiArrowDown className="absolute text-4xl "/>
              
@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
              
               
-              </a>
+              </Link>
               <Socials />
             </div>
           </div>
