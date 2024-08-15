@@ -10,10 +10,11 @@ import 'swiper/css/pagination'
 // icons
 import {
   RxCrop,
-  RxPencil2,
   RxDesktop,
+  RxPencil2,
   RxReader,
   RxRocket,
+  RxArrowTopRight,
 } from "react-icons/rx";
 
 import { FreeMode, Pagination } from 'swiper';
@@ -59,15 +60,15 @@ const ServiceSlider = () => {
                 slidesPerView: 3,
                 spaceBetween: 15,
               }
-            }}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className='h-[240px] sm:h-[340px]'
+              }}
+                freeMode={true}
+                pagination={{
+                clickable: true,
+              }}
+              modules={[FreeMode, Pagination]}
+              className='h-[240px] sm:h-[340px]'
           
-          >
+            > 
             {serviceData.map}
 
           </Swiper>

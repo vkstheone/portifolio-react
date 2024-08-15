@@ -77,7 +77,7 @@ const workSlides = {
 };
 
 // icons
-import {Swiper,SwiperSlide} from 'swiper/react'
+import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
@@ -86,21 +86,18 @@ import Link from 'next/link';
 
 
 import {Pagination} from 'swiper'
-// data
-
 import {BsArrowRight} from 'react-icons/bs'
 
 
 const WorkSlider = () => {
-  return <Swiper
-  spaceBetween={10}
-  Pagination={{
-    clickable:true
-  }}
-  modules={{Pagination}}
-  className='h-[280px] sm:h-[480px]'
-  >
-    {
+  return(
+    <Swiper
+    spaceBetween={10}
+    modules={[Pagination]}
+    pagination={{ clickable:true }}
+    className='h-[280px] sm:h-[480px] relative'
+    >
+       {
       workSlides.slides.map((slide,index)=>{
         return( 
         <SwiperSlide key={index}>
@@ -133,10 +130,10 @@ const WorkSlider = () => {
         </SwiperSlide>
         )
       })
-    }
+      }
 
-    Service Slider
-  </Swiper>;
+    </Swiper>)
+  
 };
 
 export default WorkSlider;
