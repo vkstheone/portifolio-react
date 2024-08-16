@@ -5,6 +5,7 @@ import Avatar from '../components/Avatar'
 import { motion } from 'framer-motion'
 
 import { fadeIn } from '../variants'
+import Link from 'next/link'
 
 
 const Home = () => {
@@ -19,8 +20,8 @@ const Home = () => {
            exit='hidden'                   
           className="h1"
           > 
-          Vinicius Kener <br/> Desenvolvedor <br/>
-          <span className="text-accent"> FrontEnd React</span>
+          Vinicius Kener <br/> 
+          Futuro<span className="text-accent"> Dev</span>
           
           </motion.h1>
           
@@ -31,8 +32,8 @@ const Home = () => {
            exit='hidden'
            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           > 
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. L
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            23anos formado em Analise e Desenvolvimento de Sistemas. Atualmente
+            em Busca de uma oportunidae como Desenvolvedor front-end
             
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
@@ -63,16 +64,18 @@ const Home = () => {
           <ParticlesContainer />
          
           {/** Avatar */}
+          <Link href={'https://github.com/vkstheone'}>
           <motion.div 
             variants={fadeIn('up', 0.5)} 
             initial="hidden"
             animate='show'
             exit='hidden'
             transition={{duration: 1, ease: 'easeInOut'}}                
-            className="w-full h-full max-w-[717px] max-h-[678px] absolute -bottom-32
+            className="w-full h-full max-w-[717px] max-h-[678px] absolute -bottom-3
              lg:right-[8%]">
             <Avatar />
           </motion.div>
+          </Link>
         </div>
   </div>
   );

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { HiArrowDown, HiArrowRight, HoArrowRight } from 'react-icons/hi2'
 
 const ProjectsBtn = () => {
-  return <div className="mx-auto xl:mx-0">
+  return <div className="mx-auto mb-20 xl:mx-0">
       <Link 
       href={'/work'} 
       className="relative w-[185px] h-[185px] flex 

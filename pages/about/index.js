@@ -19,7 +19,7 @@ const About = () => {
     <div>
       <div className='p-20 flex flex-col items-center justify-center whitespace-nowrap mt-7 xl:mt-0 text-xs xl:text-lg xl-mx-20  '>
             <h1 className="mx-[100px] text-sm xl:text-2xl mt-8 xl:mt-0 xl:mx-[50px]">Sobre mim</h1>
-            <p>I&apos;m a creative MERN Stack Developer</p>
+            <p>Futuro Desenvolvedor Front-end</p>
       </div>
       
       <div>
@@ -92,11 +92,11 @@ const About = () => {
         </div>
 
         <div className=" hidden xl:block absolute xl:top-[60%] right-[180px]">
-          <h6>
-            Certifications
+          <h6 className="text-center	">
+            Formação
           </h6>
-          <p className="">
-            Formação em Analise e Desenvolvimento de Sistemas
+          <p className="text-center	mt-2">
+            Analise e Desenvolvimento de Sistemas
           </p>
         </div>
 
