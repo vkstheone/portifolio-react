@@ -29,50 +29,28 @@ const workSlides = {
       images: [
         {
           title: 'Static Landing Pages',
-          path: '/thumb4.jpg',
+          path: '/hbo.png',
           link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'MERN stack project',
-          path: '/thumb1.jpg',
+          path: '/coffe-shop.png',
           link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'Awwarded',
-          path: '/thumb2.jpg',
+          path: '/movies-app.png',
           link: 'https://vkstheone.github.io/hbo-clone/',
         },
         {
           title: 'Payment Gateway',
-          path: '/thumb3.jpg',
+          path: '/shop.png',
           link: 'https://vkstheone.github.io/hbo-clone/',
         },
       ],
     },
-    {
-      images: [
-        {
-          title: 'Static Landing Pages',
-          path: '/thumb4.jpg',
-          link: 'https://vkstheone.github.io/hbo-clone/',
-        },
-        {
-          title: 'MERN stack project',
-          path: '/thumb1.jpg',
-          link: 'https://vkstheone.github.io/hbo-clone/',
-        },
-        {
-          title: 'Awwarded',
-          path: '/thumb2.jpg',
-          link: 'https://vkstheone.github.io/hbo-clone/',
-        },
-        {
-          title: 'Payment Gateway',
-          path: '/thumb3.jpg',
-          link: 'https://vkstheone.github.io/hbo-clone/',
-        },
-      ],
-    },
+    
+    
   ],
 };
 
