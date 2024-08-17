@@ -71,7 +71,7 @@ const About = () => {
 
         
 
-        <div className="absolute xl:top-[174px] mt-5 top-[365px] right-0 xl:right-[170px]">
+        <div className="absolute xl:top-[174px] mt-5 top-[665px] right-0 xl:right-[170px]">
           <h4>Detalhes</h4>
           <div className="p-y-4 flex  gap-1 mt-4">
             <p className="text-white text-xs xl:text-lg">Nome:</p>
