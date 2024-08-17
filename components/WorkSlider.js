@@ -72,7 +72,7 @@ const WorkSlider = () => {
     <Swiper
     spaceBetween={10}
     modules={[Pagination]}
-    pagination={{ clickable:true }}
+    pagination={{ clickable: true }}
     className='h-[280px] sm:h-[480px] relative'
     >
        {
@@ -84,7 +84,7 @@ const WorkSlider = () => {
           <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
             {slide.images.map((image,index)=>{
               return(
-                <div className='relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index}>
+                <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index}>
                   <div className='w-[250px] xl:w-[350px] flex items-center justify-center relative overflow-hidden group xl:h-[200px] h-[130px]'>
                     
                     <Link href={image.link}><Image src={image.path} width={500} height={300} alt={image.link}/>  
@@ -98,8 +98,8 @@ const WorkSlider = () => {
                            < div className='text-xl'><BsArrowRight/></div>
                         </div>
                            
-                   </div>
-                   </Link>
+                    </div>
+                    </Link>
                   </div>
                 </div>
               )

@@ -12,9 +12,9 @@ import {
 export const navData = [
   { name: 'Home', path: '/', icon: <HiHome /> },
   { name: 'Sobre min', path: '/about', icon: <HiUser /> },
- 
+  
   { name: 'Projetos', path: '/work', icon: <HiViewColumns /> },
-  // {    name: 'contato', path: '/contact', icon: <HiEnvelope />,}//
+  {name: 'contato', path: '/contact', icon: <HiEnvelope />,}
 ];
 
 import Link from 'next/link';

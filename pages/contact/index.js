@@ -17,15 +17,19 @@ const Contact = () => {
   const [message, setmessage] = useState("")
   //const [User,setUser] = useState("")
 
-
+  const handleChange = (e, setter) => {
+  };
+  
+  
   function sendEmail(e) {
     e.preventDefault();
-
+    
     if(name == '' || email == '' || assunto == '' || message == ''){
       alert("Prencha todos os Campos")
       return;
     }
 
+    
     const templateParams = {
       from_name: name,
       message: message,
@@ -33,7 +37,7 @@ const Contact = () => {
     }
     emailjs.send("service_6mp5u1m", "template_rsdaec2", templateParams, "6cUlfheRqokYbjWCB")
     .then((response) =>{
-      console.log("EMAIL ENVIADO", response.status, response.text)
+      alert("EMAIL ENVIADO COM SUCESSO", response.status, response.text)
       setname("")
       setemail("")
       setassunto("")
@@ -45,15 +49,17 @@ const Contact = () => {
 
 
 
+
   return (<div className='h-full bg-primary/30 '>
     <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
       <div className='flex flex-col w-full max-w-[700px]'>
         <motion.h2 variants={fadeIn('up',0.2)} 
-        initial="hidden"
-         animate="show"
+          initial="hidden"
+          animate="show"
           exit="hidden" 
           className='h2 text-center mb-12 '
-          >  Entre em  <span className='text-accent '>Contato.</span></motion.h2>
+          >  Entre em  <span className='text-accent '>Contato.</span>
+        </motion.h2>
 
 
 
@@ -76,7 +82,7 @@ const Contact = () => {
                   
                   <input type="email" 
                   placeholder='Email' 
-                  className='input' 
+                  className='input  text-transform-none' 
                   onChange={(e) => setemail(e.target.value)} 
                   value={email}/>
               

@@ -1,5 +1,9 @@
 import me from "./me.jpg"
 import react,{useState} from "react";
+
+import { motion } from 'framer-motion';
+import {fadeIn} from '../../variants'
+
  // icons
 import {
   FaHtml5,
@@ -23,9 +27,10 @@ const About = () => {
       </div>
       
       <div>
-        <div className="absolute top-[180px] xl:top-[180px] xl:my-[-50px] xl:px-[180px] ">
-              <h6>Sobre mim</h6>
-              <p className="xl:w-[350px] xl:text-xs text-[10px]">
+        <div className="absolute  top-[180px] xl:top-[180px] xl:my-[-50px] xl:px-[180px] ">
+              <h6 className="hidden text-center mb-3 xl:block">Sobre mim</h6>
+              <motion.p variants={fadeIn('up', 0.3)} initial="hidden" animate="show" exit="hidden" 
+              className="px-5 xl:w-[350px]  xl:text-xs text-[10px]">
               Sou um desenvolvedor recém-formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por resolver 
               problemas de forma criativa. Durante minha graduação, adquiri uma sólida base em desenvolvimento de software,
               Tenho uma forte curiosidade por aprender novas tecnologias e metodologias ágeis, sempre buscando me atualizar 
@@ -34,14 +39,15 @@ const About = () => {
               Busco minha primeira oportunidade como desenvolvedor, onde eu possa contribuir com minha dedicação, proatividade 
               e vontade de aprender. Estou entusiasmado para colaborar em uma equipe dinâmica e continuar evoluindo 
               profissionalmente, sempre focado em entregar soluções eficientes e inovadoras.
-              </p>
-              <h6 className=" xl:mt-5 mt-8">Skills</h6>
-              <div className=" xl:text-2xl xl:flex xl:flex-col xl:gap-x-6 xl:gap-y-4 xl:mt-2">
+              </motion.p>
+                
+                <div className=" xl:text-2xl px-6 xl:flex xl:flex-col xl:gap-x-6 xl:gap-y-4 xl:mt-2">
+                          <h6 className=" xl:mt-5 px-6 mt-8">Skills</h6>
                   <div className="flex items-center gap-x-3">
                     <FaHtml5/>
                     <p className="xl:text-sm">Html 5</p>
                   </div>
-                  <div className="whitespace-nowrap xl:flex xl:items-center xl:gap-x-3">
+                  <div className=" xl:flex xl:items-center xl:gap-x-3">
                     <FaCss3/>
                     <p className="xl:text-sm xl:mx-0 xl:mt-0 mx-7 mt-[-20px]">Css</p>
                   </div>
@@ -65,13 +71,13 @@ const About = () => {
       </div>
       <div>
         
-        <div style={{borderRadius:"50%"}} className="hidden xl:block border-solid border-2 border-white xl:absolute xl:top-[200px] xl:left-[670px] xl:w-[250px] xl:h-[250px] ">
+        <div style={{borderRadius:"50%"}} className="hidden xl:block border-solid border-2 border-white xl:absolute absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 ">
         <Image style={{height:"100%", width:"100%", objectFit:'contain',borderRadius:"50%"}} src={me} width={300} height={200} alt=""/>
         </div>
 
         
 
-        <div className="absolute xl:top-[174px] mt-5 top-[665px] right-0 xl:right-[170px]">
+        <div className="absolute hidden xl:top-[174px] mt-5 sm:block top-[340px] right-5 xl:right-[170px]">
           <h4>Detalhes</h4>
           <div className="p-y-4 flex  gap-1 mt-4">
             <p className="text-white text-xs xl:text-lg">Nome:</p>

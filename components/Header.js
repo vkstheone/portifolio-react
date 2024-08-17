@@ -11,7 +11,7 @@ const Header = () => {
               <div className='container mx-auto'>
                 <div className='flex flex-col gap-2 sm:flex-row justify-between items-center '>
               
-                      <Link href={'/cv.pdf'} download>    
+                      <Link href={'/vini.pdf'} download>    
                       <button  className='items-centerrelative inline-flex items-center justify-center p-0.5 mt-2 mb-2 me-2 overflow-hidden 
                       text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500
                        group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none

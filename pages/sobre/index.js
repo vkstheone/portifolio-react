@@ -118,8 +118,9 @@ import Circles from "../../components/Circles";
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row
         gap-x-6">
             <div className="flex-1 flex flex-col justify-end" >
-                <h2 className="h2">vinicius <span className="text-accent">storiea</span> birth magnificent designs.</h2>
-                <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"> 10 years ago, I began freelancing as a developer. Sinc then, I've Development
+                <h2 className="h2">Vinicius <span className="text-accent">storie</span> birth magnificent designs.</h2>
+                <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"> 10 years ago, I began freelancing as a developer. 
+                    Sinc then, I've Development
                     remote eorc for agencies, consulted for startups, and collaborated on
                     digital products for business and sonsumer use.
                 </p>
