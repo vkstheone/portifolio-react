@@ -10,7 +10,7 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaNode,
+  
   FaSass,
 
 } from "react-icons/fa";
