@@ -32,7 +32,7 @@ const Home = () => {
            exit='hidden'
            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 "
           > 
-            23anos formado em Analise e Desenvolvimento de Sistemas. Atualmente
+            23 anos formado em Analise e Desenvolvimento de Sistemas. Atualmente
             em Busca de uma oportunidae como <br/> Desenvolvedor front-end
             
           </motion.p>
